@@ -2,14 +2,12 @@ import { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
-  const [counter, setCounter] = useState(0);
-
   return (
     <div className="App">
-      Counter: { counter }
+      <h1>Counter: 0</h1>
 
-      <button onClick={() => {setCounter(counter + 1)}}>Increment</button>
-      <button onClick={() => {setCounter(counter - 1)}}>Decrement</button>
+      <button>Increment</button>
+      <button>Decrement</button>
     </div>
   );
 }
